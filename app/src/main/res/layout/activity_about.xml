@@ -147,7 +147,7 @@
 
     <!-- Ini adalah bagian untuk menampilkan gambar
          - Mempunyai id berupa imageSakuraGugur
-         - Gambar yang ditampilkan berupa gambar Sakura
+         - Gambar yang ditampilkan berupa gambar bunga Sakura
          - Gambar berasal dari drawble
          - Tinggi gambar ialah 171dp dengan lebar 186dp
          - Menggunakan contentDescription yang dikelompokkan pada string
