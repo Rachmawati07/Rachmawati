@@ -29,7 +29,7 @@
     <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
          - Mempunyai id berupa textAbout
          - Untuk menampilkan keluaran berupa tulisan About Me
-         - Mempunyai ukuran teks sebesar 34sp dan
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
          - Mempunyai warna hitam dengan kode 000000
          - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
     -->
