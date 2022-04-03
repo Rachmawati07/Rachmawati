@@ -8,11 +8,11 @@
     tools:context=".AboutActivity">
 
     <!-- Ini adalah bagian untuk menampilkan gambar
-         - Mempunyai id berupa imageFoto
-         - Gambar yang ditampilkan berupa gambar pribadi
-         - Gambar berasal dari drawble
-         - Tinggi gambar ialah 165dp dengan lebar 230dp
-         - Menggunakan contentDescription yang dikelompokkan pada string
+       - Mempunyai id berupa imageFoto
+       - Gambar yang ditampilkan berupa gambar pribadi
+       - Gambar berasal dari drawble
+       - Tinggi gambar ialah 165dp dengan lebar 230dp
+       - Menggunakan contentDescription yang dikelompokkan pada string
     -->
     <ImageView
         android:id="@+id/imageFoto"
@@ -27,11 +27,11 @@
         app:srcCompat="@drawable/foto" />
 
     <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
-         - Mempunyai id berupa textAbout
-         - Untuk menampilkan keluaran berupa tulisan About Me
-         - Mempunyai ukuran teks sebesar 34sp dan dibold
-         - Mempunyai warna hitam dengan kode 000000
-         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+       - Mempunyai id berupa textAbout
+       - Untuk menampilkan keluaran berupa tulisan About Me
+       - Mempunyai ukuran teks sebesar 34sp dan
+       - Mempunyai warna hitam dengan kode 000000
+       - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
     -->
     <TextView
         android:id="@+id/textAbout"
@@ -71,9 +71,9 @@
         app:layout_constraintVertical_bias="0.079" />
 
     <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
-         - Mempunyai id berupa buttonHomeAbout
-         - Tombol ini bertuliskan Home
-         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+       - Mempunyai id berupa buttonHomeAbout
+       - Tombol ini bertuliskan Home
+       - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
     -->
     <Button
         android:id="@+id/buttonHomeAbout"
@@ -147,7 +147,7 @@
 
     <!-- Ini adalah bagian untuk menampilkan gambar
          - Mempunyai id berupa imageSakuraGugur
-         - Gambar yang ditampilkan berupa gambar bunga Sakura
+         - Gambar yang ditampilkan berupa gambar Sakura
          - Gambar berasal dari drawble
          - Tinggi gambar ialah 171dp dengan lebar 186dp
          - Menggunakan contentDescription yang dikelompokkan pada string
