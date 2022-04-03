@@ -200,7 +200,7 @@
 
     <!-- Ini adalah bagian untuk menampilkan gambar
          - Mempunyai id berupa imagePinkTulip
-         - Gambar yang ditampilkan berupa gambar bunga tulip warna pink
+         - Gambar yang ditampilkan berupa gambar bunga tulip berwarna pink
          - Gambar berasal dari drawble
          - Tinggi gambar ialah 153dp dengan lebar 103dp
          - Menggunakan contentDescription yang dikelompokkan pada string
