@@ -187,7 +187,7 @@
          - Menggunakan contentDescription yang dikelompokkan pada string
     -->
     <ImageView
-        android:id="@+id/imagetulippink"
+        android:id="@+id/imageTulipPink"
         android:layout_width="326dp"
         android:layout_height="125dp"
         android:layout_marginEnd="4dp"
@@ -213,7 +213,7 @@
         android:layout_marginBottom="4dp"
         android:contentDescription="@string/imagePinkTulip"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imagetulippink"
+        app:layout_constraintEnd_toEndOf="@+id/imageTulipPink"
         app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/pinktulip"
