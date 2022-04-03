@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffebee"
+    tools:context=".AboutActivity">
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+       - Mempunyai id berupa imageFoto
+       - Gambar yang ditampilkan berupa gambar pribadi
+       - Gambar berasal dari drawble
+       - Tinggi gambar ialah 165dp dengan lebar 230dp
+       - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageFoto"
+        android:layout_width="230dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/imageFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textAbout"
+        app:srcCompat="@drawable/foto" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+       - Mempunyai id berupa textAbout
+       - Untuk menampilkan keluaran berupa tulisan About Me
+       - Mempunyai ukuran teks sebesar 34sp dan
+       - Mempunyai warna hitam dengan kode 000000
+       - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="casual"
+        android:text="@string/textAbout"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textKata
+         - Untuk menampilkan keluaran berupa tulisan tentang penjelasan pribadi
+         - Mempunyai ukuran teks sebesar 20sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textKata"
+        android:layout_width="315dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/textKata"
+        android:textAlignment="center"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFoto"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+       - Mempunyai id berupa buttonHomeAbout
+       - Tombol ini bertuliskan Home
+       - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonHomeAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonHomeAbout"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textKata"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageTulip
+         - Gambar yang ditampilkan berupa gambar bunga Tulip
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 146dp dengan lebar 226dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageTulip"
+        android:layout_width="226dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="224dp"
+        android:contentDescription="@string/imageTulip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFoto"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/tulip"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imagePinkSakura
+         - Gambar yang ditampilkan berupa gambar Sakura
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 97dp dengan lebar 144dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imagePinkSakura"
+        android:layout_width="144dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/imagePinkSakura"
+        app:layout_constraintBottom_toTopOf="@+id/imageFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pinksakura" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageTulipRed
+         - Gambar yang ditampilkan berupa gambar bunga tulip merah
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 106dp dengan lebar 276dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageTulipRed"
+        android:layout_width="276dp"
+        android:layout_height="106dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/imagetulipred"
+        android:contentDescription="@string/imageTulipRed" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSakuraGugur
+         - Gambar yang ditampilkan berupa gambar Sakura
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 171dp dengan lebar 186dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSakuraGugur"
+        android:layout_width="186dp"
+        android:layout_height="171dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="184dp"
+        android:contentDescription="@string/imageSakuraGugur"
+        app:layout_constraintBottom_toTopOf="@+id/textKata"
+        app:layout_constraintEnd_toEndOf="@+id/imagePinkSakura"
+        app:srcCompat="@drawable/sakuragugur" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

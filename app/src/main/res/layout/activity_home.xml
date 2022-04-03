@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ede7f6"
+    tools:context=".HomeActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textHome
+         - Untuk menampilkan keluaran berupa tulisan HOME
+         - Mempunyai ukuran teks sebesar 60sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textHome"
+        android:textColor="#121111"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonProfile
+         - Tombol ini bertuliskan Profile
+         - Mempunyai ukuran teks 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textProfile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonAbout
+         - Tombol ini bertuliskan About Me
+         - Mempunyai ukuran teks 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/textAboutMe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonProfile" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonContact
+         - Tombol ini bertuliskan Contact
+         - Mempunyai ukuran teks 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonContact"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="@string/textContact"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbout"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonMessage
+         - Tombol ini bertuliskan Message
+         - Mempunyai ukuran teks 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonMesssage"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="@string/textMessage"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonContact"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageKupu
+         - Gambar yang ditampilkan berupa gambar kupu-kupu
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 48dp dengan lebar 94dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageKupu"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="72dp"
+        android:contentDescription="@string/imageKupu"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/kupu" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageRanting
+         - Gambar yang ditampilkan berupa gambar ranting
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 314dp dengan lebar 277dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageRanting"
+        android:layout_width="277dp"
+        android:layout_height="314dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ranting"
+        android:contentDescription="@string/imageRanting" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSun
+         - Gambar yang ditampilkan berupa gambar matahari dan awan
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 101dp dengan lebar 134dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSun"
+        android:layout_width="134dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/imageSun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sun"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageGrassFlo
+         - Gambar yang ditampilkan berupa gambar rumput berbunga
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 241dp dengan lebar 424dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageGrassFlo"
+        android:layout_width="424dp"
+        android:layout_height="241dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/flowergrass"
+        android:contentDescription="@string/imageGrassFlo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

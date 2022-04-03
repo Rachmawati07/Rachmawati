@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1f5fe"
+    tools:context=".MainActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textLogin
+         - Untuk menampilkan keluaran berupa tulisan Login
+         - Menggunakan font berupa sans-serif-black
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/login"
+        android:textColor="#151212"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa editTextUsername
+         - Untuk menampilkan keluaran hint berupa tulisan Masukkan Username
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 20sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_width="316dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_username"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Rachmawati
+        - Mempunyai id berupa editTextPassword
+        - Untuk menampilkan keluaran hint berupa tulisan Masukkan Password
+        - Menggunakan input teks berupa textPassword
+        - Mempunyai ukuran teks sebesar 20sp
+        - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/masukkan_password"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsername" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonLogin
+         - Tombol ini bertuliskan Login
+         - Mempunyai ukuran teks sebesar 16sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="130dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/button_Login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPassword"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageGrass
+         - Gambar yang ditampilkan berupa gambar rumput
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 120dp dengan lebar 411dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageGrass"
+        android:layout_width="411dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/imageGrass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/grass" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageCloudyy
+         - Gambar yang ditampilkan berupa gambar awan
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 194dp dengan lebar 413dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageCloudyy"
+        android:layout_width="413dp"
+        android:layout_height="194dp"
+        android:contentDescription="@string/imageCloudyy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cloudyy"
+        tools:ignore="ImageContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

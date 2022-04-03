@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8e1"
+    tools:context=".ShowMessageActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textShowMessage
+         - Untuk menampilkan keluaran berupa tulisan Your Message here
+         - Menggunakan font berupa akaya-telivigala
+         - Mempunyai ukuran teks sebesar 20sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textShowMessage"
+        android:layout_width="286dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:text="@string/textYourMessage"
+        android:textAlignment="center"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textThis" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textThis
+         - Untuk menampilkan keluaran berupa tulisan This Is Your Message
+         - Menggunakan font berupa serif-monospace
+         - Mempunyai ukuran teks sebesar 24sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textThis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/textThis"
+        android:textColor="#121111"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageGolden
+         - Gambar yang ditampilkan berupa gambar sulur daun
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 319dp dengan lebar 384dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageGolden"
+        android:layout_width="384dp"
+        android:layout_height="319dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/imageGolden"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/golden"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonBack
+         - Tombol ini bertuliskan Back
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="@string/buttonBack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageBiruKupu
+         - Gambar yang ditampilkan berupa gambar kupu-kupu berwarna biru
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 75dp dengan lebar 109dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageBiruKupu"
+        android:layout_width="109dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/birukupu"
+        android:contentDescription="@string/imageBiruKupu" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSakuraKuning
+         - Gambar yang ditampilkan berupa gambar bunga sakura kuning
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 103dp dengan lebar 216dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+     -->
+    <ImageView
+        android:id="@+id/imageSakuraKuning"
+        android:layout_width="216dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="60dp"
+        android:contentDescription="@string/imageSakuraKuning"
+        app:layout_constraintBottom_toBottomOf="@+id/textThis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sakurakuning" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

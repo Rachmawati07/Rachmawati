@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f8e9"
+    tools:context=".MessageActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textMessage
+         - Untuk menampilkan keluaran berupa tulisan Give Your Message here
+         - Menggunakan font berupa cursive
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="311dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="cursive"
+        android:text="@string/textGiveMessage"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian untuk memasukkan dan mengedit teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa editTextEnterMessage
+         - Untuk menampilkan keluaran hint berupa tulisan Enter a message
+         - Menggunakan font berupa sans-serif-medium
+         - Menggunakan input teks berupa textPersonName
+         - Mempunyai ukuran teks sebesar 48sp
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <EditText
+        android:id="@+id/editTextEnterMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-medium"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#0B0A0A"
+        android:textColorHint="#616161"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage"
+        app:layout_constraintVertical_bias="0.144"
+        tools:ignore="LabelFor" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonSend
+         - Tombol ini bertuliskan Send
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+     -->
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/buttonSend"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEnterMessage" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageBungaVek
+         - Gambar yang ditampilkan berupa gambar bunga vektor
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 269dp dengan lebar 317dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageBungaVek"
+        android:layout_width="317dp"
+        android:layout_height="269dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/imageBungaVek"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHomeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMessage"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bungavek" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+         - Mempunyai id berupa buttonHomeMessage
+         - Tombol ini bertuliskan Home
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonHomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="@string/buttonHomeMessage"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageBungaBiru
+         - Gambar yang ditampilkan berupa gambar bunga vektor berwarna biru
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 97dp dengan lebar 406dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/bungaBiru"
+        android:layout_width="406dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/bungaBiru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bungabiru" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

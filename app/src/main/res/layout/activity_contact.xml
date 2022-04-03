@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efebe9"
+    tools:context=".ContactActivity">
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textContact
+         - Untuk menampilkan keluaran berupa tulisan Contact Me
+         - Mempunyai ukuran teks sebesar 34sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+     -->
+    <TextView
+        android:id="@+id/textContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:fontFamily="monospace"
+        android:text="@string/textCont"
+        android:textColor="#0C0C0C"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.435"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textWa
+         - Untuk menampilkan keluaran berupa tulisan +62 897-8416-486
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textWa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textWa"
+        android:textColor="#151515"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toEndOf="@+id/imageWa"
+        app:layout_constraintTop_toBottomOf="@+id/textContact" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageWa
+         - Gambar yang ditampilkan berupa gambar logo WhatsApp
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 56dp dengan lebar 55dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageWa"
+        android:layout_width="55dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:contentDescription="@string/imageWa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whatsapp" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageEmail
+         - Gambar yang ditampilkan berupa gambar logo Email
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 45dp dengan lebar 42dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/imageEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageWa"
+        app:srcCompat="@drawable/email" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageInsta
+         - Gambar yang ditampilkan berupa gambar logo Instagram
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 43dp dengan lebar 46dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageInsta"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/imageInsta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEmail"
+        app:srcCompat="@drawable/insta" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textInsta
+         - Untuk menampilkan keluaran berupa tulisan itsracha07
+         - Mempunyai ukuran teks sebesar 20sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textInsta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textInsta"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toEndOf="@+id/imageInsta"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <!-- Ini adalah bagian button untuk menampilkan tombol pada projek Rachmawati
+        - Mempunyai id berupa buttonHomeContact
+        - Tombol ini bertuliskan Home
+        - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <Button
+        android:id="@+id/buttonHomeContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonHomeContact"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInsta"
+        app:layout_constraintVertical_bias="0.122" />
+
+    <!-- Ini adalah bagian teks yang ditambahkan pada projek Rachmawati
+         - Mempunyai id berupa textEmail
+         - Untuk menampilkan keluaran berupa tulisan rachmawatidariwulan@gmail.com
+         - Mempunyai ukuran teks sebesar 16sp dan dibold
+         - Dan dikelompokkan berdasarkan resource string agar tidak menampilkan error
+    -->
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/textEmail"
+        android:textColor="#0E0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/imageEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textWa" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSulurA
+         - Gambar yang ditampilkan berupa gambar logo Sulur untuk bagian atas
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 200dp dengan lebar 465dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSulurA"
+        android:layout_width="465dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="68dp"
+        android:contentDescription="@string/imageSulurA"
+        app:layout_constraintBottom_toTopOf="@+id/textWa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sulura" />
+
+    <!-- Ini adalah bagian untuk menampilkan gambar
+         - Mempunyai id berupa imageSulurB
+         - Gambar yang ditampilkan berupa gambar logo Sulur untuk bagian bawah
+         - Gambar berasal dari drawble
+         - Tinggi gambar ialah 119dp dengan lebar 465dp
+         - Menggunakan contentDescription yang dikelompokkan pada string
+    -->
+    <ImageView
+        android:id="@+id/imageSulurB"
+        android:layout_width="465dp"
+        android:layout_height="119dp"
+        android:contentDescription="@string/imageSulurB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInsta"
+        app:layout_constraintVertical_bias="0.605"
+        app:srcCompat="@drawable/sulurb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
